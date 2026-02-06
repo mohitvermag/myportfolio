@@ -19,7 +19,7 @@ const Hero = () => {
                         transition={{ duration: 0.8 }}
                         className="flex-1 text-center md:text-left"
                     >
-                        <h2 className="text-cyan-400 font-semibold tracking-wide uppercase mb-4">Welcome to my world</h2>
+                        <h2 className="text-cyan-400 font-semibold tracking-wide uppercase mb-4">Welcome to my World</h2>
                         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
                             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">Mohit Verma</span>
                         </h1>
