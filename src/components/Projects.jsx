@@ -15,12 +15,7 @@ const projects = [
         tech: ["React", "Node.js", "MySQL", "Rest API"],
         links: { live: "https://zunadesk.com/" }
     },
-    {
-        title: "GemReact - AI Tool",
-        description: "Built a sophisticated AI chat interface integrating the Gemini API, featuring context-aware conversations, search history persistence, and a highly responsive, modern UI for an enhanced user experience.",
-        tech: ["React", "Tailwind CSS", "Gemini API"],
-        links: { live: "https://mohitvermag.github.io/GemReact-React-AI-Tool/" }
-    },
+
     {
         title: "Edayaa",
         description: "Architected a premium e-commerce platform for luxury jewellery, utilizing Redux for complex state management, ensuring secure transactions, and delivering a pixel-perfect, responsive shopping experience.",
