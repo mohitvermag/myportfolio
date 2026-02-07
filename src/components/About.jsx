@@ -63,8 +63,9 @@ const About = () => {
                         <div className="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:bg-slate-750 transition-colors">
                             <Globe className="text-blue-500 w-10 h-10 mb-4" />
                             <h4 className="text-xl font-bold text-white mb-2">Deployment</h4>
-                            <p className="text-gray-400 text-sm">Deploying on Vercel, Render and managing CI/CD.</p>
+                            <p className="text-gray-400 text-sm">Deploying on Vercel and Render.</p>
                         </div>
+
                     </motion.div>
                 </div>
             </div>

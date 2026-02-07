@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
+import dp1 from '../assets/dp1.jfif';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +22,11 @@ const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0 cursor-pointer">
                         <Link to="home" smooth={true} duration={500}>
-                            <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                                MV.
-                            </h1>
+                            <img
+                                src={dp1}
+                                alt="MV"
+                                className="w-10 h-10 rounded-full border-2 border-cyan-500 object-cover"
+                            />
                         </Link>
                     </div>
 

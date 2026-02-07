@@ -4,22 +4,40 @@ import { ExternalLink, Github, Folder } from 'lucide-react';
 
 const projects = [
     {
-        title: "Blog Application (MERN)",
-        description: "Full-stack blog platform with JWT authentication, CRUD blogs, image uploads, and deployment.",
-        tech: ["React", "Redux", "Node.js", "MongoDB", "Cloudinary"],
-        links: { github: "#", live: "#" }
+        title: "To Do App",
+        description: "Designed and developed a highly efficient task management application featuring persistent local storage, enabling users to organize daily activities with seamless data retention and a clutter-free UI.",
+        tech: ["React", "Tailwind CSS", "LocalStorage"],
+        links: { live: "https://mohitvermag.github.io/ToDo-App/" }
     },
     {
-        title: "Project Management Website",
-        description: "Real-time task management system with history logs, notifications API, and responsive UI.",
+        title: "ZunaDesk",
+        description: "Engineered a full-scale project management ecosystem with real-time task tracking, automated history logging, and role-based access control, optimizing team collaboration and workflow visibility.",
         tech: ["React", "Node.js", "MySQL", "Rest API"],
-        links: { github: "#", live: "#" }
+        links: { live: "https://zunadesk.com/" }
     },
     {
         title: "GemReact - AI Tool",
-        description: "AI-powered chat platform with recent search history, clean Tailwind UI, and fast responses using Gemini API.",
+        description: "Built a sophisticated AI chat interface integrating the Gemini API, featuring context-aware conversations, search history persistence, and a highly responsive, modern UI for an enhanced user experience.",
         tech: ["React", "Tailwind CSS", "Gemini API"],
-        links: { github: "#", live: "#" }
+        links: { live: "https://mohitvermag.github.io/GemReact-React-AI-Tool/" }
+    },
+    {
+        title: "Edayaa",
+        description: "Architected a premium e-commerce platform for luxury jewellery, utilizing Redux for complex state management, ensuring secure transactions, and delivering a pixel-perfect, responsive shopping experience.",
+        tech: ["React", "Node.js", "MongoDB", "Express", "Redux", "Tailwind CSS"],
+        links: { live: "https://edayaajewellery.com/" }
+    },
+    {
+        title: "Bird Outsourcing",
+        description: "Developed a high-performance corporate website for an accounting firm, focusing on SEO optimization, fast load times, and a professional aesthetic to establish digital credibility.",
+        tech: ["React", "Tailwind CSS"],
+        links: { live: "https://bird-outsourcing.onrender.com/" }
+    },
+    {
+        title: "SpectrumKart",
+        description: "Created a dynamic e-commerce frontend for printer sales, implementing advanced filtering, seamless API data consumption, and an intuitive user journey to drive conversion rates.",
+        tech: ["React", "API Integration", "Tailwind CSS"],
+        links: { live: "https://spectrumkart.com/" }
     }
 ];
 
@@ -54,8 +72,7 @@ const Projects = () => {
                                         <Folder className="text-cyan-400 w-8 h-8" />
                                     </div>
                                     <div className="flex gap-4">
-                                        <a href={project.links.github} className="text-gray-400 hover:text-white transition-colors"><Github size={20} /></a>
-                                        <a href={project.links.live} className="text-gray-400 hover:text-white transition-colors"><ExternalLink size={20} /></a>
+                                        <a href={project.links.live} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors"><ExternalLink size={20} /></a>
                                     </div>
                                 </div>
 
