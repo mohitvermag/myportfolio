@@ -1,9 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-
 const SEO = ({ title, description, keywords, name, type, url, image }) => {
     return (
-        <Helmet>
+        <>
             {/* Standard metadata tags */}
             <title>{title}</title>
             <meta name='description' content={description} />
@@ -28,7 +25,7 @@ const SEO = ({ title, description, keywords, name, type, url, image }) => {
             {/* End Twitter tags */}
 
             <link rel="canonical" href={url} />
-        </Helmet>
+        </>
     );
 };
 
