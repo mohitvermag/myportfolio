@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight, Download } from 'lucide-react';
 import dp1 from '../assets/dp1.jfif';
-import cv from '../assets/Mohit MERN.pdf';
+import cv from '../assets/Mohit_MERN.pdf';
 
 const Hero = () => {
     return (
