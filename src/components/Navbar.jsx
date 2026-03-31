@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import dp1 from '../assets/dp1.jfif';
 

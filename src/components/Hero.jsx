@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight, Download } from 'lucide-react';
 import dp1 from '../assets/dp1.jfif';
-import cv from '../assets/Mohit_MERN.pdf';
+import cv from '../assets/Mohit MERN.pdf';
 
 const Hero = () => {
     return (
@@ -47,7 +47,7 @@ const Hero = () => {
                             <Link to="contact" smooth={true} duration={500} className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center cursor-pointer">
                                 Contact Me <ArrowRight size={20} className="ml-2" />
                             </Link>
-                            <a href={cv} download="Mohit_Verma_CV.pdf" className="px-8 py-3 border border-slate-700 text-gray-300 rounded-full font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-all flex items-center justify-center">
+                            <a href={cv} download="Mohit CV.pdf" className="px-8 py-3 border border-slate-700 text-gray-300 rounded-full font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-all flex items-center justify-center">
                                 Download CV <Download size={20} className="ml-2" />
                             </a>
                         </div>
