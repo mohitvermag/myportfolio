@@ -1,19 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import CursorFollower from './components/CursorFollower';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
+import BlogPost from './pages/BlogPost';
+import Blog from './pages/Blog';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
+      <CursorFollower />
       <ScrollToTop />
-      <div className="bg-slate-950 text-white min-h-screen font-sans selection:bg-cyan-500/30 selection:text-cyan-200 flex flex-col">
+      <div className="site-frame relative flex min-h-screen flex-col overflow-x-hidden font-sans text-pearl selection:bg-amber-300/25 selection:text-white">
         <Navbar />
-        <main className="flex-grow">
+        <main className="relative z-10 flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />

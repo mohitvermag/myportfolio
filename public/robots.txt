@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mohitvermag.github.io/sitemap.xml
+Sitemap: https://vermamohit.in/sitemap.xml

@@ -1,26 +1,43 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Globe, Linkedin, Mail } from 'lucide-react';
+import { personalInfo } from '../data/portfolioData';
 
 const Footer = () => {
-    return (
-        <footer className="bg-slate-950 border-t border-slate-800 py-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+  return (
+    <footer className="border-t border-white/8 bg-slate-950/70 py-8">
+      <div className="section-shell flex flex-col items-center justify-between gap-5 md:flex-row">
+        <div className="text-center md:text-left">
+          <p className="font-display text-xl text-white">{personalInfo.name}</p>
+          <p className="mt-1 text-sm text-slate-400">
+            React developer and MERN stack developer based in Noida, India.
+          </p>
+          <p className="mt-3 text-xs uppercase tracking-[0.24em] text-slate-500">
+            &copy; {new Date().getFullYear()} All rights reserved
+          </p>
+        </div>
 
-                <div className="text-center md:text-left">
-                    <p className="text-gray-400 text-sm">
-                        © {new Date().getFullYear()} <span className="text-white font-semibold">Mohit Verma</span>. All rights reserved.
-                    </p>
-                </div>
-
-                <div className="flex gap-6">
-                    <a href="https://github.com/mohitvermag" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors"><Github size={20} /></a>
-                    <a href="https://www.linkedin.com/in/mohit-verma-webdeveloper/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors"><Linkedin size={20} /></a>
-                    {/* Twitter/X link not provided, keeping generic or removing if desired. Leaving as is for now with # but could be removed if not needed. User didn't specify Twitter. I will leave it as # for now to avoid breaking layout if they want it later, or I could remove it if I want to be strict. I'll leave it but maybe comment it out if I was unsure. Actually, user only gave GitHub, LinkedIn and Email. I will verify if I should remove Twitter. The plan said "Update Social Links", didn't explicitly say remove others. I'll just update the ones I have. */}
-                    <a href="mailto:mohitvermag75@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors"><Mail size={20} /></a>
-                </div>
-            </div>
-        </footer>
-    );
+        <div className="flex items-center gap-5 text-slate-400">
+          <a href={personalInfo.github} target="_blank" rel="noreferrer" className="transition hover:text-white">
+            <Github size={19} />
+          </a>
+          <a
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="transition hover:text-white"
+          >
+            <Linkedin size={19} />
+          </a>
+          <a href={`mailto:${personalInfo.email}`} className="transition hover:text-white">
+            <Mail size={19} />
+          </a>
+          <a href={personalInfo.website} target="_blank" rel="noreferrer" className="transition hover:text-white">
+            <Globe size={19} />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

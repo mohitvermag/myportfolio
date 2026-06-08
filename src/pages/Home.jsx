@@ -1,40 +1,30 @@
 import React from 'react';
-import Hero from '../components/Hero';
 import About from '../components/About';
-import Skills from '../components/Skills';
-import Experience from '../components/Experience';
-import Projects from '../components/Projects';
 import Contact from '../components/Contact';
+import Credentials from '../components/Credentials';
+import Experience from '../components/Experience';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
 import SEO from '../components/SEO';
+import Skills from '../components/Skills';
 
 const Home = () => {
-    return (
-        <>
-            <SEO
-                title="Mohit Verma | Expert Frontend & MERN Stack Developer"
-                description="I am Mohit Verma, a passionate MERN Stack Developer building scalable, high-performance web applications. Explore my portfolio and projects."
-                keywords="Mohit Verma, MERN Stack Developer, Frontend Developer, React Developer, Web Development Services"
-            />
-            <div id="home">
-                <Hero />
-            </div>
-            <div id="about">
-                <About />
-            </div>
-            <div id="skills">
-                <Skills />
-            </div>
-            <div id="experience">
-                <Experience />
-            </div>
-            <div id="projects">
-                <Projects />
-            </div>
-            <div id="contact">
-                <Contact />
-            </div>
-        </>
-    );
+  return (
+    <>
+      <SEO
+        title="Mohit Verma | React Developer and MERN Stack Developer"
+        description="Portfolio of Mohit Verma, a React developer with hands-on MERN stack experience building polished interfaces, REST APIs, and production-ready web applications."
+        keywords="Mohit Verma, React Developer, MERN Stack Developer, Frontend Developer, Portfolio, JavaScript, Tailwind CSS, Node.js"
+      />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Credentials />
+      <Contact />
+    </>
+  );
 };
 
 export default Home;
