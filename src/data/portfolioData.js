@@ -224,10 +224,12 @@ export const projectData = [
 export const educationData = [
   {
     title: 'Master of Computer Applications (MCA)',
+    score: '78%',
     note: 'Strong academic grounding in software development, web engineering, and application architecture.',
   },
   {
     title: 'Bachelor of Science in Computer Science',
+    score: '74%',
     note: 'Built the fundamentals across programming, systems thinking, and software problem solving.',
   },
 ];

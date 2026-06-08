@@ -45,7 +45,12 @@ const Credentials = () => {
                     <Icon className="h-6 w-6 text-mint" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="break-words font-display text-lg leading-tight text-pearl">{item.title}</h3>
+                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                      <h3 className="break-words font-display text-lg leading-tight text-pearl">{item.title}</h3>
+                      <span className="rounded-full border border-mint/18 bg-mint/10 px-2.5 py-1 text-xs font-semibold text-mint">
+                        {item.score}
+                      </span>
+                    </div>
                     <p className="mt-2 line-clamp-2 text-sm leading-6 text-pearl/58">{item.note}</p>
                   </div>
                 </div>

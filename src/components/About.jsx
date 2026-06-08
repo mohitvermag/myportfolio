@@ -15,7 +15,7 @@ const quickSignals = [
   { value: 'React', label: 'UI craft' },
   { value: 'MERN', label: 'Product flows' },
   { value: 'CMS', label: 'Content systems' },
-  { value: 'Perf', label: 'Fast delivery' },
+  { value: 'Performance', label: 'Fast delivery' },
 ];
 
 const About = () => {
