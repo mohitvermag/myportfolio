@@ -25,9 +25,9 @@ export const expertisePills = [
 
 export const heroMetrics = [
   {
-    value: '3',
+    value: '4',
     label: 'Live products',
-    detail: 'Education, commerce, and business platforms shipped to production.',
+    detail: 'Education, commerce, printer sales, and business platforms.',
   },
   {
     value: '40%',
@@ -160,14 +160,14 @@ export const projectData = [
     domain: 'studies.mentorworld.in',
     live: 'https://studies.mentorworld.in/',
     image:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=76',
     summary:
       'A MERN-based course management platform built for structured academic workflows, secure access control, and payment-enabled onboarding.',
     highlights: [
-      'Built role-based flows for Admin, Teacher, and Student experiences.',
-      'Implemented JWT authentication, attendance tracking, and automated SMTP email notifications.',
-      'Optimized the frontend with React Hooks, debouncing, and lazy loading for faster initial renders.',
-      'Integrated Razorpay for secure transactions and automated payment confirmations.',
+      'Built Admin, Teacher, and Student flows with protected access, course workflows, and clear dashboards.',
+      'Implemented JWT auth, attendance tracking, SMTP notifications, and Razorpay payment handling.',
+      'Improved frontend speed using React Hooks, debounced interactions, and lazy-loaded screens.',
+      'Connected the React UI with Node, Express, and MongoDB APIs for end-to-end product delivery.',
     ],
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Razorpay'],
   },
@@ -177,13 +177,29 @@ export const projectData = [
     domain: 'edayaajewellery.com',
     live: 'https://edayaajewellery.com/',
     image:
-      'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=76',
     summary:
       'A premium e-commerce experience focused on smooth browsing, product state management, and a stronger buying journey.',
     highlights: [
-      'Developed a feature-rich e-commerce engine with Redux state management for product handling and smoother UX.',
-      'Implemented persistent cart behavior with Redux Toolkit and LocalStorage for a seamless returning-user experience.',
-      'Balanced visual polish with performance to support luxury-brand presentation online.',
+      'Built product listing, product detail, cart, and buying-flow UI for a premium jewellery storefront.',
+      'Used Redux Toolkit and LocalStorage to keep cart behavior stable for returning users.',
+      'Balanced luxury visual polish with responsive layouts and fast browsing across devices.',
+    ],
+    tech: ['React.js', 'Redux Toolkit', 'JavaScript', 'Tailwind CSS', 'LocalStorage'],
+  },
+  {
+    title: 'Spectrumkart',
+    category: 'Printer E-commerce Store',
+    domain: 'spectrumkart.com',
+    live: 'https://spectrumkart.com/',
+    image:
+      'https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?auto=format&fit=crop&w=1200&q=76',
+    summary:
+      'A printer-selling e-commerce platform with product browsing, cart persistence, and a direct purchase-focused customer journey.',
+    highlights: [
+      'Built category browsing, printer product pages, cart state, and checkout-ready responsive UI.',
+      'Used Redux Toolkit and LocalStorage patterns similar to Edayaa for persistent shopping behavior.',
+      'Designed the flow around quick discovery for printers, accessories, and office purchase decisions.',
     ],
     tech: ['React.js', 'Redux Toolkit', 'JavaScript', 'Tailwind CSS', 'LocalStorage'],
   },
@@ -193,13 +209,13 @@ export const projectData = [
     domain: 'birdoutsourcing.com',
     live: 'https://birdoutsourcing.com/',
     image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1400&q=80',
+      'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=76',
     summary:
       'A mobile-first business platform designed to establish credibility, communicate services clearly, and stay maintainable as the product evolves.',
     highlights: [
-      'Built a responsive React.js and Tailwind CSS platform with strong cross-browser compatibility.',
-      'Created reusable UI building blocks such as buttons, modals, and navigation components.',
-      'Refactored components to TypeScript for improved type-safety and long-term developer experience.',
+      'Built a responsive React and Tailwind platform with clean service pages and strong mobile usability.',
+      'Created reusable buttons, modals, navigation, and layout blocks for faster future updates.',
+      'Improved maintainability with TypeScript-focused component refactoring and cleaner structure.',
     ],
     tech: ['React.js', 'Tailwind CSS', 'TypeScript', 'Reusable Components'],
   },

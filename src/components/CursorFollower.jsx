@@ -5,6 +5,13 @@ const CursorFollower = () => {
   const ringRef = useRef(null);
 
   useEffect(() => {
+    const canUseFinePointer = window.matchMedia('(pointer: fine)').matches;
+    const wantsMotion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!canUseFinePointer || !wantsMotion) {
+      return undefined;
+    }
+
     const dot = dotRef.current;
     const ring = ringRef.current;
     const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2 };

@@ -10,7 +10,7 @@ const SectionHeader = ({ eyebrow, title, description, align = 'left' }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.35 }}
       transition={{ duration: 0.55, ease: 'easeOut' }}
-      className={`mb-14 max-w-3xl ${centered ? 'mx-auto text-center' : ''}`}
+      className={`mb-9 max-w-3xl sm:mb-14 ${centered ? 'mx-auto text-center' : ''}`}
     >
       <p className="section-kicker">{eyebrow}</p>
       <h2 className="section-title">{title}</h2>

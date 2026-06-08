@@ -9,8 +9,8 @@ const Skills = () => {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Skills"
-          title="Core technologies presented the way recruiters actually scan them: fast and visual."
-          description="The stack is strongest around React, JavaScript, Tailwind, APIs, CMS integration, and practical product delivery."
+          title="Core stack."
+          description="React, JavaScript, Tailwind, APIs, CMS integration, and product delivery."
         />
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -21,7 +21,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, delay: index * 0.04 }}
-              className="glass-panel card-lift flex items-center gap-4 p-5"
+              className="glass-panel card-lift flex items-center gap-4 p-4 sm:p-5"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-3xl border border-white/10 bg-slate-950/70">
                 <img src={skill.icon} alt={skill.name} className="h-8 w-8" loading="lazy" />
@@ -34,7 +34,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-8 grid gap-5 lg:mt-10 lg:grid-cols-3">
           {skillBuckets.map((bucket, index) => (
             <motion.div
               key={bucket.title}
@@ -42,7 +42,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="glass-panel card-lift p-7"
+              className="glass-panel card-lift p-5 sm:p-7"
             >
               <p className="text-sm uppercase tracking-[0.24em] text-slate-400">{bucket.title}</p>
               <p className="mt-4 text-base leading-7 text-slate-300">{bucket.description}</p>

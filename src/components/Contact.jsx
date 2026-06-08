@@ -90,11 +90,11 @@ const Contact = () => {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Contact"
-          title="Built for recruiter outreach: direct links, clean details, and a working contact form."
-          description="If the goal is to discuss a frontend role, MERN opportunity, or product build, every route to reach out is surfaced clearly below."
+          title="Contact and resume."
+          description="Direct links, resume, and a working form for frontend or MERN opportunities."
         />
 
-        <div className="grid gap-5 lg:grid-cols-[0.88fr,1.12fr]">
+        <div className="grid items-start gap-5 lg:grid-cols-[0.88fr,1.12fr]">
           <motion.div
             initial={{ opacity: 0, y: 28 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -158,16 +158,16 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.55, delay: 0.08 }}
-            className="glass-panel card-lift relative overflow-hidden p-5 sm:p-8 lg:p-10"
+            className="glass-panel card-lift relative overflow-hidden p-5 sm:p-7 lg:p-8"
           >
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(242,204,103,0.14),transparent_36%)]" />
             <div className="relative">
               <p className="text-xs uppercase tracking-[0.22em] text-pearl/48 sm:text-sm">Send a message</p>
-              <h3 className="mt-4 font-display text-2xl leading-tight text-pearl sm:text-3xl lg:text-4xl">
+              <h3 className="mt-3 font-display text-2xl leading-tight text-pearl sm:text-3xl">
                 Start the conversation here.
               </h3>
 
-              <form ref={form} onSubmit={sendEmail} className="mt-7 space-y-4 sm:space-y-5">
+              <form ref={form} onSubmit={sendEmail} className="mt-5 space-y-3.5 sm:space-y-4">
                 <div>
                   <label className="mb-2 block text-xs uppercase tracking-[0.18em] text-pearl/48">
                     Your name
@@ -201,7 +201,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     required
-                    rows="5"
+                    rows="4"
                     placeholder="Tell me about the role, project, or collaboration."
                     className="w-full min-w-0 resize-none rounded-[18px] border border-pearl/10 bg-black/25 px-4 py-3.5 text-pearl outline-none transition placeholder:text-pearl/30 focus:border-citrine/45 focus:bg-black/40 sm:rounded-[20px]"
                   />

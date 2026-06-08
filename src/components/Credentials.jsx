@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, BookOpenCheck, GraduationCap } from 'lucide-react';
 import SectionHeader from './SectionHeader';
-import { educationData, personalInfo } from '../data/portfolioData';
+import { educationData } from '../data/portfolioData';
 
 const Credentials = () => {
   return (
@@ -10,84 +10,49 @@ const Credentials = () => {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Credentials"
-          title="Academic grounding backed by measurable achievement."
-          description="The portfolio is built around real internship outcomes, but the academic base is strong as well - including first rank in the MCA program."
+          title="Academic grounding."
+          description="Strong MCA performance, including first rank and practical software foundations."
         />
 
-        <div className="grid gap-6 lg:grid-cols-[0.95fr,1.05fr]">
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.55 }}
-            className="glass-panel card-lift relative overflow-hidden p-5 sm:p-8 lg:p-10"
-          >
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(242,204,103,0.16),transparent_48%)]" />
-            <div className="relative">
-              <span className="pill max-w-full text-xs sm:text-sm">
-                <Award size={16} className="text-citrine" />
-                <span className="min-w-0 break-words">Standout academic performance</span>
-              </span>
-              <div className="mt-7 flex flex-col gap-5 sm:flex-row sm:items-start">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-citrine/20 bg-citrine/10 sm:h-16 sm:w-16">
-                  <Award className="h-8 w-8 text-citrine sm:h-9 sm:w-9" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-[0.22em] text-pearl/48 sm:text-sm">Recognition</p>
-                  <h3 className="mt-2 break-words font-display text-2xl leading-tight text-pearl sm:text-3xl lg:text-4xl">
-                    Academic Excellence Award
-                  </h3>
-                  <p className="mt-4 max-w-xl text-sm leading-7 text-pearl/64 sm:text-base">
-                    Secured 1st rank in the Master of Computer Applications program, reinforcing a
-                    strong foundation in software engineering and disciplined execution.
-                  </p>
-                </div>
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.55 }}
+          className="glass-panel relative overflow-hidden p-4 sm:p-5 lg:p-6"
+        >
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-citrine/60 to-transparent" />
+          <div className="grid gap-3 md:grid-cols-[0.8fr,1fr,1fr]">
+            <div className="flex min-w-0 items-center gap-3 rounded-[18px] border border-citrine/16 bg-citrine/[0.075] p-4">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-citrine/20 bg-black/20">
+                <Award className="h-6 w-6 text-citrine" />
               </div>
-
-              <div className="mt-7 grid gap-3 sm:grid-cols-2">
-                <div className="min-w-0 rounded-[22px] border border-pearl/10 bg-pearl/[0.045] p-4 sm:p-5">
-                  <p className="text-xs uppercase tracking-[0.18em] text-pearl/48 sm:text-sm">Focus area</p>
-                  <p className="mt-3 break-words text-base font-medium leading-6 text-pearl sm:text-lg">
-                    Product-minded frontend and MERN development
-                  </p>
-                </div>
-                <div className="min-w-0 rounded-[22px] border border-pearl/10 bg-pearl/[0.045] p-4 sm:p-5">
-                  <p className="text-xs uppercase tracking-[0.18em] text-pearl/48 sm:text-sm">Based in</p>
-                  <p className="mt-3 break-words text-base font-medium leading-6 text-pearl sm:text-lg">{personalInfo.location}</p>
-                </div>
+              <div className="min-w-0">
+                <p className="text-xs uppercase tracking-[0.18em] text-citrine">MCA Rank</p>
+                <p className="mt-1 font-display text-2xl text-pearl">1st</p>
               </div>
             </div>
-          </motion.div>
 
-          <div className="grid gap-6">
             {educationData.map((item, index) => {
               const Icon = index === 0 ? GraduationCap : BookOpenCheck;
 
               return (
-                <motion.div
+                <div
                   key={item.title}
-                  initial={{ opacity: 0, y: 28 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.25 }}
-                  transition={{ duration: 0.55, delay: index * 0.1 }}
-                  className="glass-panel card-lift p-5 sm:p-7 lg:p-8"
+                  className="flex min-w-0 items-start gap-3 rounded-[18px] border border-pearl/10 bg-pearl/[0.04] p-4"
                 >
-                  <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-pearl/10 bg-pearl/[0.05] sm:h-14 sm:w-14">
-                      <Icon className="h-7 w-7 text-mint" />
-                    </div>
-                    <div className="min-w-0">
-                      <h3 className="break-words font-display text-xl leading-tight text-pearl sm:text-2xl">{item.title}</h3>
-                      <p className="mt-3 max-w-2xl text-sm leading-7 text-pearl/62 sm:text-base">
-                        {item.note}
-                      </p>
-                    </div>
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-pearl/10 bg-black/22">
+                    <Icon className="h-6 w-6 text-mint" />
                   </div>
-                </motion.div>
+                  <div className="min-w-0">
+                    <h3 className="break-words font-display text-lg leading-tight text-pearl">{item.title}</h3>
+                    <p className="mt-2 line-clamp-2 text-sm leading-6 text-pearl/58">{item.note}</p>
+                  </div>
+                </div>
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

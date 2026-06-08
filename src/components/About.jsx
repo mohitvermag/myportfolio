@@ -24,8 +24,8 @@ const About = () => {
       <div className="section-shell">
         <SectionHeader
           eyebrow="About"
-          title="Frontend polish backed by full-stack execution."
-          description="Short version: clean interfaces, reusable systems, API integration, and real product delivery."
+          title="Frontend polish with full-stack depth."
+          description="Clean interfaces, reusable systems, API integration, and real delivery."
         />
 
         <div className="grid gap-5 lg:grid-cols-[0.9fr,1.1fr]">

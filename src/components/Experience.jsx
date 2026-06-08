@@ -16,8 +16,8 @@ const Experience = () => {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Experience"
-          title="Real internship work, shown through outcomes."
-          description="Less paragraph reading, more signal: role, stack, impact, and what shipped."
+          title="Internship work with outcomes."
+          description="Role, stack, measurable impact, and shipped product work."
         />
 
         <div className="grid gap-5 lg:grid-cols-[0.72fr,1.28fr]">
@@ -26,7 +26,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.5 }}
-            className="glass-panel relative overflow-hidden p-7"
+            className="glass-panel relative overflow-hidden p-5 sm:p-7"
           >
             <div className="absolute -right-14 top-0 h-full w-40 rotate-12 bg-gradient-to-b from-citrine/16 to-mint/6" />
             <p className="relative text-sm uppercase tracking-[0.28em] text-citrine">Impact</p>
@@ -48,9 +48,9 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="group grid overflow-hidden rounded-[26px] border border-pearl/11 bg-[#0d0f09]/78 transition hover:-translate-y-1 hover:border-citrine/25 md:grid-cols-[0.9fr,1.1fr]"
-              >
-                <div className="relative border-b border-pearl/10 p-6 md:border-b-0 md:border-r">
+                  className="group grid overflow-hidden rounded-[20px] border border-pearl/11 bg-[#0d0f09]/78 transition hover:-translate-y-1 hover:border-citrine/25 sm:rounded-[26px] md:grid-cols-[0.9fr,1.1fr]"
+                >
+                <div className="relative border-b border-pearl/10 p-5 sm:p-6 md:border-b-0 md:border-r">
                   <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(242,204,103,0.1),transparent_46%,rgba(123,215,189,0.07))]" />
                   <div className="relative">
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-pearl/10 bg-pearl/[0.05]">
@@ -76,7 +76,7 @@ const Experience = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
+                <div className="p-5 sm:p-6">
                   <div className="grid gap-3">
                     {experience.achievements.slice(0, 2).map((item) => (
                       <div key={item} className="rounded-[20px] border border-pearl/10 bg-pearl/[0.04] p-4">
